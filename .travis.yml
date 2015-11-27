@@ -13,6 +13,6 @@ script:
    - cd mruby 
    - rake 
    - ./bin/mruby --version
-   - ~/mruby/bin/mruby test/test.rb
+   - ./bin/mruby test/test.rb
 
 
