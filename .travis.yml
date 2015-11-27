@@ -11,8 +11,7 @@ before_script:
 script:
    # build mruby
    script: sudo git clone https://github.com/mruby/mruby.git
-   script: cd mruby
-   script: rake
-   script: ./bin/mruby --version
+   script: cd mruby && rake
+   script: ./mruby/bin/mruby --version
 
 
