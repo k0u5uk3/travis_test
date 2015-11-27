@@ -1,0 +1,13 @@
+language: c
+compiler:
+  - gcc
+before_install:
+  - sudo apt-get -qq update
+install:
+  - sudo apt-get -qq install gcc
+env:
+  - PROGNAME=hello
+before_script:
+script:
+ - sudo uname -a 
+
