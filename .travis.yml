@@ -9,7 +9,7 @@ env:
   - PROGNAME=hello
 before_script:
 script:
-   - sudo git clone https://github.com/mruby/mruby.git
+   - git clone https://github.com/mruby/mruby.git
    - cd mruby 
    - rake 
    - ./bin/mruby --version
