@@ -4,10 +4,15 @@ compiler:
 before_install:
   - sudo apt-get -qq update
 install:
-  - sudo apt-get -qq install gcc
+  - sudo apt-get -qq install gcc rake bison git 
 env:
   - PROGNAME=hello
 before_script:
 script:
- - sudo uname -a 
+   # build mruby
+   script: sudo git clone https://github.com/mruby/mruby.git
+   script: cd mruby
+   script: rake
+   script: ./bin/mruby --version
+
 
