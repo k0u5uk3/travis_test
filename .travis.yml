@@ -9,10 +9,11 @@ env:
   - PROGNAME=hello
 before_script:
 script:
+   - pwd
    - git clone https://github.com/mruby/mruby.git
    - cd mruby 
    - rake 
    - ./bin/mruby --version
-   - ./bin/mruby test/test.rb
-
+   - cd 
+   - pwd
 
