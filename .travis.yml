@@ -10,10 +10,10 @@ env:
 before_script:
 script:
    # build mruby
-   script: sudo git clone https://github.com/mruby/mruby.git
-   script: pwd
-   script: cd mruby 
-   script: pwd
+   - sudo git clone https://github.com/mruby/mruby.git
+   - pwd
+   - cd mruby 
+   - pwd
    
 # script: ./mruby/bin/mruby --version
 
